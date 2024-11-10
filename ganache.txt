@@ -1,0 +1,5 @@
+1. Download .AppImage from official website
+2. Command for permissions:
+    chmod +x ganache-<version>-x86_64.AppImage
+3. Run command:
+    ./ganache-<version>-x86_64.AppImage
