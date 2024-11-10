@@ -31,6 +31,7 @@ public:
 
 void printCodes(Node *node, string code)
 {
+    //base
     if (node->left == nullptr && node->right == nullptr)
     {
         cout << "Character : " << node->character << endl;
@@ -54,6 +55,7 @@ void printCodes(Node *node, string code)
 
 int main(int argc, char const *argv[])
 {
+    //min-heap
     priority_queue<pair<int, Node *>, vector<pair<int, Node *>>, greater<pair<int, Node *>>> pq;
 
     int n;
@@ -77,7 +79,7 @@ int main(int argc, char const *argv[])
     // Constructing huffman tree
     while (!pq.empty())
     {
-
+        //BASE
         if (pq.size() == 1)
         {
             cout << pq.top().first << endl;
